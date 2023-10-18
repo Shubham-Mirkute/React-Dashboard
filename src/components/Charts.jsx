@@ -45,7 +45,7 @@ export const Charts = () => {
         </header>
         <div className='Pie-chart Pie-center-data'><span className='Pie-center-percent'>65%</span> total new <br/>Customers</div>
         <ResponsiveContainer >
-          <PieChart width={200} height={200}>
+          <PieChart className='Pie-chart-image'>
             <Pie
               data={pdata}
               cx="50%"

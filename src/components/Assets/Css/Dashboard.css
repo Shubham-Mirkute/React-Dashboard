@@ -47,7 +47,7 @@
 
 .main-container {
     grid-area: main;
-    overflow-y: auto;
+    overflow-x:hidden;
     padding: 5px 20px;
     color: rgba(255, 255, 255, 0.95);
   }
@@ -215,7 +215,12 @@ h4{
     color: black;
 }
 
-  /* Medium <= 992px */
+@media screen and (max-width: 1150px) {
+  .Product-table{
+    margin: 70px;
+  }
+}
+
   
 @media screen and (max-width: 992px) {
     .main-cards {
@@ -229,6 +234,9 @@ h4{
     .table-SearchBar{
       width: 120px;
     }
+    .Product-table{
+      margin: 70px 0px 0px 0px;
+    }
 
   }
 
@@ -239,6 +247,22 @@ h4{
       grid-template-columns: 1fr 1fr;
       gap: 10px;
       margin-bottom: 0;
+    }
+    
+  }
+
+  @media screen and (max-width: 430px) {
+    .Product-table{
+      overflow: scroll;
+    }
+    .table-SearchBar{
+      width: 90px;
+    }
+    .header-right{
+      width: 150px;
+    }
+    .SearchBar{
+      width: 100px;
     }
   
   }

@@ -92,12 +92,13 @@ const Dashboard = ({OpenSidebar}) => {
                     <div className='table-header-right '>
                         <input placeholder='search' className='table-SearchBar' />
                         <BsSearch  className='icon-Search'  />  
-                    </div>
-                    <select className='Dropdown' value={selectedOption} onChange={handleDropdownChange}>
-                        <option value="option1">Last 7 days</option>
-                        <option value="option2">Last 30 days</option>
-                        <option value="option3">Last 3 months</option>
-                    </select>
+                        </div>
+                        <select className='Dropdown' value={selectedOption} onChange={handleDropdownChange}>
+                            <option value="option1">Last 7 days</option>
+                            <option value="option2">Last 30 days</option>
+                            <option value="option3">Last 3 months</option>
+                        </select>
+                    
                 </div>
             </header>
             <div className='table-content-heading'>
