@@ -1,0 +1,245 @@
+
+.header {
+    grid-area: header;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+  }
+
+.header-right{
+  position: relative;
+  width: 200px;
+  height: 25px;
+}
+
+
+.SearchBar{
+  position: absolute;
+  width: 180px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 0px 0px 30px;
+}
+
+.icon-Search{
+  color: grey;
+  position: absolute;
+  z-index: 2;
+  margin: 5px;
+}
+.icon-Dashboard{
+  color: grey;
+
+}
+.hello{
+  color: rgb(255, 190, 50);
+  font-size: x-large;
+}
+.menu-icon {
+    display: none;
+    z-index: 13;
+    cursor: pointer;
+  }
+
+
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 5px 20px;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+.main-container::-webkit-scrollbar {
+  width: 0.1rem; /* Set the scrollbar width to be very small */
+  height: 0.1rem;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background: transparent; /* Make the scrollbar thumb (drag handle) transparent */
+}
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+  }
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+.icon-background{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+.i1 {
+    background-color: #7ef57a;
+    color: #0c6808;
+  }
+  
+.i2 {
+    background-color: #eb81c2;
+    color: #aa0eaf;
+  }
+  
+.i3 {
+    background-color: #bdddf1;
+    color: rgb(61, 61, 255);
+  }
+  
+.i4 {
+    background-color: #fab1b1;
+    color: rgb(226, 35, 35);
+  }
+.card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  
+.card_icon {
+    font-size: 45px;
+  }
+h6{
+    color: grey;
+    
+}
+h4{
+    color: black;
+}
+.Drop{
+  color: red;
+}
+.Rise{
+  color: rgb(61, 211, 99);
+
+}
+
+.Arrows{
+  font-size: 20px;
+}
+.Product-table{
+  display: grid;
+  background-color: aliceblue;
+  margin-top: 30px;
+  padding: 10px;
+}
+.Product-table-header{
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.Product-table-header-right{
+ display: flex;
+ justify-content: center;
+}
+
+.table-header-right{
+  position: relative;
+  width: 200px;
+  height: 25px;
+}
+
+
+.table-SearchBar{
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 0px 0px 30px;
+
+}
+.Dropdown{
+  color: grey;
+  background-color: aliceblue;
+  border: none;
+  font-size:small;
+  border-radius: 10px;
+  
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr; /* First column is three times wider */
+  gap: 5px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* The rest of the CSS remains the same */
+.table-header {
+  color: grey;
+  padding: 5px;
+  text-align: start;
+}
+
+.table-row {
+  padding: 5px;
+  text-align: start;
+  color: black;
+}
+.table-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    
+  }
+  
+.Product_icon {
+  height: 50px;
+    width: 50px;
+    padding-right: 10px;
+    
+  }
+h6{
+    color: grey;
+}
+h4{
+    color: black;
+}
+
+  /* Medium <= 992px */
+  
+@media screen and (max-width: 992px) {
+    .main-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+      }
+    .menu-icon {
+      display: inline;
+    }
+    .table-SearchBar{
+      width: 120px;
+    }
+
+  }
+
+  /* Small <= 768px */
+  
+@media screen and (max-width: 768px) {
+    .main-cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  
+  }
+  
